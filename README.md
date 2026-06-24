@@ -1,6 +1,8 @@
 # Where-is-the-math-in-the-Rubik-s-Cube-by-Daniela-G-Peraza-Pichardo
 This repository explores the mathematical principles behind the best-selling toy in history: the Rubik's Cube. While the Rubik's Cube is often seen only as a mechanical puzzle from the 80's, it is deeply connected to several areas of mathematics, in particular, group theory and permutations.
 
+![](1_d5ghk6ZEXbIQVGSfUR9l3w.png)
+
 -----------------------------------------------------------------------------------------
 
 The objective of this project is to understand the Rubik's Cube through mathematical concepts, to describe its possible configurations, and to analyze the algorithms used to solve it through this mathematical perspective. As mentioned earlier, the Rubik’s Cube may appear as a mere entertaining puzzle, but each move performed in any of its faces rearranges its pieces according to precise rules. Therefore, by representing the changes in the pieces' configuration as permutations, it is possible to create a model that helps understand the cube’s behavior, which could even predict the resulting rearrangement of entire sequences of face rotations.
