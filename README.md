@@ -64,9 +64,7 @@ Each face rotation rearranges the cube's pieces and since these rearrangements c
 
 ### RUBIK'S CUBE NOTATION
 
-Before constructing a mathematical model, it is necessary to establish a notation for describing cube movements.
-
-Supposing the cube is facing an arbitrary direction, with one face facing toward us, the six faces of the cube are denoted by the letters:
+Before constructing a mathematical model, it is necessary to establish a notation for describing cube movements. Supposing the cube is facing an arbitrary direction, with one face facing toward us, the six faces of the cube are denoted by the letters:
 
 **U (Up)**
 
@@ -82,25 +80,13 @@ Supposing the cube is facing an arbitrary direction, with one face facing toward
 
 ![](RUBIKSNOTATION.png)
 
-A letter by itself represents a **90-degree clockwise rotation** of that face. For example:
+A letter by itself represents a **90-degree clockwise rotation** of that face. For example: [R]
 
-[R]
+A prime symbol indicates a **90-degree counterclockwise rotation**: [R']
 
-*INSERT GIF OF R
+A number 2 indicates a **180-degree rotation**: [R2]
 
-denotes a clockwise turn of the right face.
-
-A prime symbol indicates a **90-degree counterclockwise rotation**:
-
-[R']
-
-*INSERT GIF OF R'
-
-A number 2 indicates a **180-degree rotation**:
-
-[R2]
-
-INSERT GIF OF R2
+![](R-on-Rubiks-cube.jpg)
 
 These symbols allow move sequences, commonly called algorithms, to be written in a more standardized way.
 
