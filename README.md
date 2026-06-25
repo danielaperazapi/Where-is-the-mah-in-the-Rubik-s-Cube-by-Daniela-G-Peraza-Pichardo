@@ -162,29 +162,29 @@ A group is a mathematical structure consisting of a set together with an operati
 
 Let _G_ be a set and let (*) be an operation on its elements. We can represent cube permutations as group elements. We will call the group of permutations 𝑅, where the operator * is a concatenation of sequences of cube moves, or rotations of a cube’s face. However, the * will be omitted in cube notation.
 
-#### Closure
+#### 1. Closure
 
 For any group elements _h_ and _g_ that are in _G_, _h∗g_ is also in _G_
 
-Combining two permutations will result in a valid permutation in the Rubik's Cube which can be reached through legal moves.
+-Combining two permutations will result in a valid permutation in the Rubik's Cube which can be reached through legal moves.
 
-#### Identity
+#### 2. Identity
 
 There is an element _e_ in _G_ such that _e∗g = g∗e = g_
 
-For the Rubik's Cube, the identity corresponds to leaving the cube unchanged.
+-For the Rubik's Cube, the identity corresponds to leaving the cube unchanged.
 
-#### Inverse
+#### 3. Inverse
 
 Every element _g_ in G has an inverse _g⁻¹_ relative to the operation * such that _g∗g⁻¹ = g⁻¹∗g = e_
 
-Every cube move can be undone. For example: _RR' = R'R = e_
+-Every cube move can be undone. For example: _RR' = R'R = e_
 
-#### Associativity
+#### 4. Associativity
 
 The operation * is associative, so for any elements _f_, _g_, and _h_, _(f∗g)∗h = f∗(g∗h)_
 
-This means that performing the permutation produced by _(f∗g)_ and then combining it with the permutation produced by _h_ will result in the same permutation as performing the permutation produced by _f_ followed by the permutation produced by the combination of _(g∗h)_
+-This means that performing the permutation produced by _(f∗g)_ and then combining it with the permutation produced by _h_ will result in the same permutation as performing the permutation produced by _f_ followed by the permutation produced by the combination of _(g∗h)_
 
 Because all four properties are satisfied, the set of cube permutations forms a group.
 
