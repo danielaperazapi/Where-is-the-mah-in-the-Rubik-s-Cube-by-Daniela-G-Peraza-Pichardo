@@ -277,6 +277,16 @@ _R U R' U R U2 R'_ = _(UFR UBR UFL)(UF UR UB)_
 
 This algorithm preserves most of the cube, cycles only a small set of top-layer pieces, changes the orientation of specific corners, and leaves edge orientations unchanged.
 
+In general, we can determine a move sequence that takes the cube from a given starting position to a given final position, but the answer is usually not unique. 
+
+In other words, there is exactly one permutation that converts the starting configuration into the final configuration. However, the same element can be represented by many different move sequences, for example:
+
+_R_ and _RRRRR_ produce exactly the same permutation because _RRRRR=R⁴R=eR=R_
+
+Similarly, _RUR′U′_ might be equivalent to a much longer sequence containing moves that cancel each other.
+
+Therefore many different move sequences can correspond to the same permutation.
+
 ### WHY GROUP THEORY IS NECESSARY
 
 Without group theory, solving algorithms often appear to be arbitrary sequences of moves that must simply be memorized.
