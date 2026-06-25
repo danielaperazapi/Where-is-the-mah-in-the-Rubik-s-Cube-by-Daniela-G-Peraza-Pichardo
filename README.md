@@ -80,11 +80,11 @@ Before constructing a mathematical model, it is necessary to establish a notatio
 
 ![](RUBIKSNOTATION.png)
 
-A letter by itself represents a **90-degree clockwise rotation** of that face. For example: [R]
+A letter by itself represents a **90-degree clockwise rotation** of that face. For example: _R_
 
-A prime symbol indicates a **90-degree counterclockwise rotation**: [R']
+A prime symbol indicates a **90-degree counterclockwise rotation**: _R'_
 
-A number 2 indicates a **180-degree rotation**: [R2]
+A number 2 indicates a **180-degree rotation**: _R2_
 
 ![](R-on-Rubiks-cube.jpg)
 
