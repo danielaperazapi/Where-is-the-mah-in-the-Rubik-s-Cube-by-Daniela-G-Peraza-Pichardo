@@ -1,4 +1,4 @@
-# Where is the math in the-Rubik's Cube? by Daniela G. Peraza Pichardo
+# _Where is the math in the Rubik's Cube? _by Daniela G. Peraza Pichardo
 This repository explores the mathematical principles behind the best-selling toy in history: the Rubik's Cube. While the Rubik's Cube is often seen only as a mechanical puzzle from the 80's, it is deeply connected to several areas of mathematics, in particular, group theory and permutations.
 
 ![](header.png)
