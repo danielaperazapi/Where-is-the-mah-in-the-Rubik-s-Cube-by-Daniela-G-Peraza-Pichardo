@@ -176,7 +176,7 @@ For the Rubik's Cube, the identity corresponds to leaving the cube unchanged.
 
 #### Inverse
 
-Every element _g_ in G has an inverse _g^(−1)_ relative to the operation * such that _g∗g^(−1) = g^(−1)∗g = e_
+Every element _g_ in G has an inverse _g⁻¹_ relative to the operation * such that _g∗g⁻¹ = g⁻¹∗g = e_
 
 Every cube move can be undone. For example: _RR' = R'R = e_
 
@@ -194,13 +194,13 @@ Several basic results from group theory are useful in the analysis of cube algor
 
 The identity element _e_ is unique.
 
-If 𝑎∗𝑏 = ⅇ, then 𝑎 = 𝑏^(−1)
+If 𝑎∗𝑏 = ⅇ, then 𝑎 = 𝑏⁻¹
 
 If 𝑎∗𝑥 = 𝑏∗𝑥, then 𝑎 = 𝑏
 
-The inverse of (𝑎𝑏) is 𝑏^(−1) 𝑎^(−1)
+The inverse of (𝑎𝑏) is 𝑏⁻¹ 𝑎⁻¹
 
-(𝑎^(−1) )^(−1) = 𝑎
+(𝑎⁻¹)⁻¹ = 𝑎
 
 These results allow us to manipulate move sequences algebraically and simplify expressions involving cube algorithms.
 
@@ -210,7 +210,7 @@ One of the most important structures in Rubik's Cube solving is the commutator.
 
 Given two move sequences _A_ and _B_, the commutator is defined as
 
-_[A,B]_ = _ABA^(-1)B^(-1)_
+_[A,B]_ = _ABA⁻¹B⁻¹_
 
 The idea behind the commutator is simple:
 
@@ -221,7 +221,7 @@ Undo _B_.
 
 An example commutator would be:
 
-_[R,U]_ = _RUR^(-1)U^(-1)_
+_[R,U]_ = _RUR⁻¹U⁻¹_
 
 #### Why the Commutator Works
 
@@ -235,9 +235,9 @@ However, if the chosen two moves affect completely different sets of cubies, or 
 
 𝐴𝐵 = 𝐵𝐴
 
-𝐴𝐵𝐴^(−1)𝐵^(−1) = ⅇ
+𝐴𝐵𝐴⁻¹𝐵⁻¹ = ⅇ
 
-𝐴𝐵𝐴^(−1)𝐵^(−1) = 𝐵𝐴𝐴^(−1) 𝐵^(−1) = 𝐵𝐵^(−1) = ⅇ
+𝐴𝐵𝐴⁻¹𝐵⁻¹ = 𝐵𝐴𝐴⁻¹ 𝐵⁻¹ = 𝐵𝐵⁻¹ = ⅇ
 
 If the whole cube group were commutative, for all _A_ and _B_, then commutators would have no effect.
 
@@ -330,3 +330,19 @@ This project has changed the way I view Rubik's Cube algorithms. Instead of seei
 -----------------------------------------------------------------------------------------
 
 ## REFERENCES
+
+Massachusetts Institute of Technology. (2010). The mathematics of the Rubik's Cube [PowerPoint slides]. https://web.mit.edu/sp.268/www/2010/rubikSlides.pdf
+
+This source served as one of the primary references for connecting the Rubik's Cube with abstract algebra. It provided explanations of permutations, cycle notation, and the mathematical structure of cube moves. The presentation was particularly useful for understanding how cube algorithms can be represented as permutations and for illustrating the relationship between physical cube movements and mathematical objects.
+
+Zhao, S. (n.d.). Theorems and definitions in group theory. University of Toronto. https://www.cs.utoronto.ca/~szhao/group_theory_thms_defs.pdf
+
+This document provided the formal mathematical foundation for the group theory concepts used throughout the project. Definitions of groups, identity elements, inverses, associativity, and important group theorems were used to justify why the set of Rubik's Cube permutations forms a mathematical group. This source was essential for ensuring that the theoretical explanations presented in the repository were mathematically rigorous.
+
+Chen, J. (n.d.). Group theory and the Rubik's Cube. Harvard University. https://people.math.harvard.edu/~jjchen/docs/Group%20Theory%20and%20the%20Rubik's%20Cube.pdf
+
+This source played a central role in connecting abstract group theory with practical Rubik's Cube solving. It provided insight into how permutations describe cube states, how legal cube moves generate a group, and why some cube configurations are impossible to obtain through legal moves. The source helped bridge the gap between theoretical mathematics and the real-world puzzle that serves as the focus of this project.
+
+GeeksforGeeks. (2024, January 9). Algorithm to solve Rubik's cube. GeeksforGeeks. https://www.geeksforgeeks.org/blogs/algorithm-to-solve-rubiks-cube/
+
+This source was used to understand the practical side of Rubik's Cube solving, particularly the stages involved in common solving methods such as CFOP. It provided accessible explanations of solving algorithms and helped contextualize the mathematical concepts discussed in this repository. While the academic sources focused on theory, this reference helped explain how those mathematical ideas are applied during the actual solving process.
