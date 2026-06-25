@@ -92,6 +92,32 @@ These symbols allow move sequences, commonly called algorithms, to be written in
 
 ### IDENTIFYING CUBE PIECES
 
+To refer to an individual cubie, or cube piece, we use as many letters as stickers on them are. The letters used are the ones that correspond to the side of the cubie we are referring to. The cube consists of three types of cubies:
+
+#### Centers
+
+Center pieces have one visible sticker and are identified by a single letter.
+
+Examples:
+
+U, D, F, B, R, L
+
+#### Edges
+
+Edge pieces have two stickers and are identified by two letters.
+
+Examples:
+
+UF, UB, UL, UR, ...
+
+#### Corners
+
+Corner pieces have three stickers and are identified by three letters.
+
+Examples:
+
+UFR, UFL, UBR, UBL, ...
+
 ### PERMUTATIONS
 
 ### GROUPS
