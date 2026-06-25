@@ -234,7 +234,9 @@ In general,
 However, if the chosen two moves affect completely different sets of cubies, or if they are the same operation then they are commutative.
 
 𝐴𝐵 = 𝐵𝐴
+
 𝐴𝐵𝐴^(−1)𝐵^(−1) = ⅇ
+
 𝐴𝐵𝐴^(−1)𝐵^(−1) = 𝐵𝐴𝐴^(−1) 𝐵^(−1) = 𝐵𝐵^(−1) = ⅇ
 
 If the whole cube group were commutative, for all _A_ and _B_, then commutators would have no effect.
@@ -267,13 +269,13 @@ Without group theory, solving algorithms often appear to be arbitrary sequences 
 
 Group theory provides a deeper explanation by showing:
 
-  Which cubies are being permuted.
+  -Which cubies are being permuted.
   
-  Why certain algorithms affect only specific pieces.
+  -Why certain algorithms affect only specific pieces.
   
-  Why some cube configurations are impossible.
+  -Why some cube configurations are impossible.
   
-  How algorithms can be constructed systematically using commutators and conjugates.
+  -How algorithms can be constructed systematically using commutators and conjugates.
 
 Instead of viewing algorithms as random move sequences, we can understand them as mathematical objects with predictable effects.
 
