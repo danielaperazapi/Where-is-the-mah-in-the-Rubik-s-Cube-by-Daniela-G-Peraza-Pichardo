@@ -43,7 +43,7 @@ This resource is particularly helpful because it bridges the gap between practic
 
 -----------------------------------------------------------------------------------------
 
-PRESENTING TO YOUR CLASSMATES
+PRESENTING THE PROPOSAL
 
 The following video presents the initial proposal for this project, _The Math Behind the 3×3 Rubik's Cube_. In this video, the main objectives of the project are introduced, as well as the mathematical concepts required to analyze the puzzle, and the motivation for studying the Rubik's Cube from a mathematical perspective. It also introduces fundamental concepts such as cycle notation, composition of permutations, and the commutator, which serves as one of the key mathematical tools used throughout this project.
 
@@ -54,6 +54,43 @@ https://youtu.be/mN8gmh6tW7c
 -----------------------------------------------------------------------------------------
 
 TECHNICALITIES OF THE PROJECT
+
+MOTIVATION
+
+A standard 3×3 Rubik's Cube has approximately (4.3\times10^{19}) possible configurations, meaning that there are more than 43 quintillion ways to arrange its pieces. Despite this enormous complexity, every **legal move** follows precise mathematical rules.
+
+*INSERT IMAGE OF LOTS OF RUBIKS CUBE COMBINATIONS
+
+Each face rotation rearranges the cube's pieces and since these rearrangements correspond to permutations of the cube pieces, the Rubik's Cube can be studied using permutations and group theory. In this repository, the focus is set particularly on the last-layer solving stages known as **OLL (Orientation of the Last Layer)** and **PLL (Permutation of the Last Layer)** which we had already mentioned.
+
+RUBIK'S CUBE NOTATION
+
+Before constructing a mathematical model, it is necessary to establish a notation for describing cube movements.
+
+Supposing the cube is facing an arbitrary direction, with one face facing toward us, the six faces of the cube are denoted by the letters:
+
+**U (Up)
+D (Down)
+F (Front)
+B (Back)
+R (Right)
+L (Left)**
+
+A letter by itself represents a **90-degree clockwise rotation** of that face. For example:
+
+[R]
+
+denotes a clockwise turn of the right face.
+
+A prime symbol indicates a **90-degree counterclockwise rotation**:
+
+[R']
+
+A number 2 indicates a **180-degree rotation**:
+
+[R2]
+
+These symbols allow move sequences, commonly called algorithms, to be written in a more standardized way.
 
 -----------------------------------------------------------------------------------------
 
