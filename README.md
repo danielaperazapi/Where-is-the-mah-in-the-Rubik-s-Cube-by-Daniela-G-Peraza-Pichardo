@@ -231,6 +231,8 @@ In general,
 
 𝐴𝐵≠𝐵𝐴 → 𝑅𝑈≠𝑈𝑅
 
+![](NONCOMMUTATIVE.png)
+
 However, if the chosen two moves affect completely different sets of cubies, or if they are the same operation then they are commutative.
 
 𝐴𝐵 = 𝐵𝐴
