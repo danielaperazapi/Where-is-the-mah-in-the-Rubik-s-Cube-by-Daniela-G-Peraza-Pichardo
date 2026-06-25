@@ -283,7 +283,7 @@ In general, we can determine a move sequence that takes the cube from a given st
 
 In other words, there is exactly one permutation that converts the starting configuration into the final configuration. However, the same element can be represented by many different move sequences, for example:
 
-_R_ and _RRRRR_ produce exactly the same permutation because _RRRRR=R⁴R=eR=R_
+_R_ and _RRRRR_ produce exactly the same permutation because _RRRRR = R⁴R = eR = R_
 
 Similarly, _RUR′U′_ might be equivalent to a much longer sequence containing moves that cancel each other.
 
@@ -331,7 +331,7 @@ Although these methods can solve or analyze the cube, they do not explain the un
 
 This project explored the mathematical foundations of the 3×3 Rubik's Cube through the concepts of permutations and group theory. By representing cube moves as permutations and viewing the set of all possible cube configurations as a mathematical group, it becomes possible to analyze how algorithms affect individual cubies and why certain solving methods work, such as CFOP. In particular, the focus was set on commutators, cycle notation, and the role of concepts from **Group Theory** and **permutations** in understanding **OLL and PLL algorithms**. Rather than viewing algorithms as arbitrary sequences of moves, this project demonstrated that they can be interpreted as mathematical objects that produce specific and predictable changes in the cube.
 
-To learn the material presented in this repository, my primary approach was to consult academic sources and carefully study the mathematical concepts behind the Rubik's Cube. I reviewed articles, lecture notes, and educational resources related to permutations, cycle notation, and group theory, and then connected those concepts to cube-solving algorithms. This approach allowed me to move beyond memorization and begin understanding the mathematical structure behind this puzzle.
+To learn the material that is presented in this repository, my primary approach was to consult academic sources and review the mathematical concepts behind the Rubik's Cube presented in the sources. This included articles, lecture notes, and educational resources related to permutations, cycle notation, and group theory, and then connected those concepts to cube-solving algorithms. This approach allowed me to move beyond memorization and begin understanding the mathematical structure behind this puzzle.
 
 Prior to this project, I already had experience solving the Rubik's Cube and was familiar with cube notation and several solving algorithms. However, my understanding was mostly procedural: I knew how to execute algorithms, but not why they worked at all. I also had limited knowledge of permutations and only a basic familiarity with some concepts from group theory. Some of these ideas felt familiar because they share similarities with topics encountered in linear algebra, such as operations, inverses, and algebraic structures. Nevertheless, I had never applied these concepts to the analysis of a Rubik's Cube before.
 
