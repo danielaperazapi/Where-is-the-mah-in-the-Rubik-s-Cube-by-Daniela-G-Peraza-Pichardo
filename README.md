@@ -66,17 +66,17 @@ Each face rotation rearranges the cube's pieces and since these rearrangements c
 
 Before constructing a mathematical model, it is necessary to establish a notation for describing cube movements. Supposing the cube is facing an arbitrary direction, with one face facing toward us, the six faces of the cube are denoted by the letters:
 
-**U (Up)**
+- **U (Up)**
 
-**D (Down)**
+- **D (Down)**
 
-**F (Front)**
+- **F (Front)**
 
-**B (Back)**
+- **B (Back)**
 
-**R (Right)**
+- **R (Right)**
 
-**L (Left)**
+- **L (Left)**
 
 ![](RUBIKSNOTATION.png)
 
@@ -138,13 +138,13 @@ _(UFR UBR UBL UFL)_
 
 This means:
 
-**UFR moves to UBR**
+- **UFR moves to UBR**
 
-**UBR moves to UBL**
+- **UBR moves to UBL**
 
-**UBL moves to UFL**
+- **UBL moves to UFL**
 
-**UFL moves to UFR**
+- **UFL moves to UFR**
 
 Similarly, the upper edges are permuted according to:
 
@@ -214,10 +214,13 @@ _[A,B]_ = _ABA⁻¹B⁻¹_
 
 The idea behind the commutator is simple:
 
-Perform move sequence _A_.
-Perform move sequence _B_.
-Undo _A_.
-Undo _B_.
+- Perform move sequence _A_.
+
+- Perform move sequence _B_.
+
+- Undo _A_.
+
+- Undo _B_.
 
 An example commutator would be:
 
@@ -249,9 +252,9 @@ Instead, because the cube is non-commutative, commutators produce controlled per
 
 During the first stages of solving, many moves can be found rather intuitively. However, once the first two layers are completed, the remaining cases become significantly more complex.
 
-In **OLL (Orientation of the Last Layer)**, the goal is to orient all last-layer pieces so that the top face becomes a single color.
+- In **OLL (Orientation of the Last Layer)**, the goal is to orient all last-layer pieces so that the top face becomes a single color.
 
-In **PLL (Permutation of the Last Layer)**, the pieces are already correctly oriented, but must be moved into their correct locations.
+- In **PLL (Permutation of the Last Layer)**, the pieces are already correctly oriented, but must be moved into their correct locations.
 
 Many OLL and PLL algorithms can be analyzed using permutations and commutators. Rather than affecting the entire cube, these algorithms are carefully designed to **move only specific corners or edges while preserving most part of sections that have already been solved**, such as the cross which remains completely unaffected or three-fourths of the F2L stage (commutators allowed localized changes).
 
@@ -265,13 +268,13 @@ _R U R' U R U2 R'_
 
 We define the permutation for each move first:
 
-_R = (UFR DFR DBR UBR)(UR FR DR BR)_
+- _R = (UFR DFR DBR UBR)(UR FR DR BR)_
 
-_U = (UFR UBR UBL UFL)(UF UR UB UL)_
+- _U = (UFR UBR UBL UFL)(UF UR UB UL)_
 
-_R′ = (UFR UBR DBR DFR)(UR BR DR FR)_
+- _R′ = (UFR UBR DBR DFR)(UR BR DR FR)_
 
-_U2 = (UFR UBL)(UBR UFL)(UF UB)(UR UL)_
+- _U2 = (UFR UBL)(UBR UFL)(UF UB)(UR UL)_
 
 We track the positions, which results in:
 
@@ -295,13 +298,13 @@ Without group theory, solving algorithms often appear to be arbitrary sequences 
 
 Group theory provides a deeper explanation by showing:
 
-  -Which cubies are being permuted.
+- Which cubies are being permuted.
   
-  -Why certain algorithms affect only specific pieces.
+- Why certain algorithms affect only specific pieces.
+
+- Why some cube configurations are impossible.
   
-  -Why some cube configurations are impossible.
-  
-  -How algorithms can be constructed systematically using commutators and conjugates.
+- How algorithms can be constructed systematically using commutators and conjugates.
 
 Instead of viewing algorithms as random move sequences, we can understand them as mathematical objects with predictable effects.
 
