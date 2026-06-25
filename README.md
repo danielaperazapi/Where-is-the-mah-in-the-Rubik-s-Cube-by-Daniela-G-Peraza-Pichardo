@@ -132,9 +132,7 @@ A permutation is a rearrangement of objects. As an example:
 
 1→2,  2→3,  3→1
 
-Every move of the Rubik's Cube can be viewed as a permutation because it rearranges the positions of cubies.
-
-For example, a U move rotates the top layer and cycles the four upper corners:
+Every move of the Rubik's Cube can be viewed as a permutation because it rearranges the positions of **corner and edge** cubies. Center cubies never move from their place, they only rotate, hence they will be omitted in the permutations. For example, a U move rotates the top layer and cycles the four upper corners:
 
 (UFR UBR UBL UFL)
 
@@ -160,14 +158,142 @@ Cycle notation therefore provides a precise description of how cube pieces move.
 
 ### GROUPS
 
+A group is a mathematical structure consisting of a set together with an operation satisfying four properties.
+
+Let _G_ be a set and let (*) be an operation on its elements. We can represent cube permutations as group elements. We will call the group of permutations 𝑅, where the operator * is a concatenation of sequences of cube moves, or rotations of a cube’s face. However, the * will be omitted in cube notation.
+
+#### Closure
+
+For any group elements _h_ and _g_ that are in _G_, _h∗g_ is also in _G_
+
+Combining two permutations will result in a valid permutation in the Rubik's Cube which can be reached through legal moves.
+
+#### Identity
+
+There is an element _e_ in _G_ such that _e∗g = g∗e = g_
+
+For the Rubik's Cube, the identity corresponds to leaving the cube unchanged.
+
+#### Inverse
+
+Every element _g_ in G has an inverse _g^(−1)_ relative to the operation * such that _g∗g^(−1) = g^(−1)∗g = e_
+
+Every cube move can be undone. For example: _RR' = R'R = e_
+
+#### Associativity
+
+The operation * is associative, so for any elements _f_, _g_, and _h_, _(f∗g)∗h = f∗(g∗h)_
+
+This means that performing the permutation produced by _(f∗g)_ and then combining it with the permutation produced by _h_ will result in the same permutation as performing the permutation produced by _f_ followed by the permutation produced by the combination of _(g∗h)_
+
+Because all four properties are satisfied, the set of cube permutations forms a group.
+
+#### Important Group Theorems
+
+Several basic results from group theory are useful in the analysis of cube algorithms:
+
+The identity element _e_ is unique.
+
+If 𝑎∗𝑏 = ⅇ, then 𝑎 = 𝑏^(−1)
+
+If 𝑎∗𝑥 = 𝑏∗𝑥, then 𝑎 = 𝑏
+
+The inverse of (𝑎𝑏) is 𝑏^(−1) 𝑎^(−1)
+
+(𝑎^(−1) )^(−1) = 𝑎
+
+These results allow us to manipulate move sequences algebraically and simplify expressions involving cube algorithms.
+
 ### THE COMMUTATOR
+
+One of the most important structures in Rubik's Cube solving is the commutator.
+
+Given two move sequences _A_ and _B_, the commutator is defined as
+
+_[A,B]_ = _ABA^(-1)B^(-1)_
+
+The idea behind the commutator is simple:
+
+Perform move sequence _A_.
+Perform move sequence _B_.
+Undo _A_.
+Undo _B_.
+
+An example commutator would be:
+
+_[R,U]_ = _RUR^(-1)U^(-1)_
+
+#### Why the Commutator Works
+
+The Rubik's Cube group is non-abelian, also called non-commutative group, meaning that the order of operations matters.
+
+In general,
+
+𝐴𝐵≠𝐵𝐴 → 𝑅𝑈≠𝑈𝑅
+
+However, if the chosen two moves affect completely different sets of cubies, or if they are the same operation then they are commutative.
+
+𝐴𝐵 = 𝐵𝐴
+𝐴𝐵𝐴^(−1)𝐵^(−1) = ⅇ
+𝐴𝐵𝐴^(−1)𝐵^(−1) = 𝐵𝐴𝐴^(−1) 𝐵^(−1) = 𝐵𝐵^(−1) = ⅇ
+
+If the whole cube group were commutative, for all _A_ and _B_, then commutators would have no effect.
+
+Instead, because the cube is non-commutative, commutators produce controlled permutations of a small number of pieces. This is precisely why they are useful for designing solving algorithms.
 
 ### APPLICATION TO OLL AND PLL
 
+During the first stages of solving, many moves can be found rather intuitively. However, once the first two layers are completed, the remaining cases become significantly more complex.
+
+In **OLL (Orientation of the Last Layer)**, the goal is to orient all last-layer pieces so that the top face becomes a single color.
+
+In **PLL (Permutation of the Last Layer)**, the pieces are already correctly oriented, but must be moved into their correct locations.
+
+Many OLL and PLL algorithms can be analyzed using permutations and commutators. Rather than affecting the entire cube, these algorithms are carefully designed to move only specific corners or edges while preserving solved sections.
+
+From a mathematical perspective, each OLL or PLL algorithm corresponds to a particular permutation in the Rubik's Cube group.
+
+We choose an arbitrary algorithm from the extense list of OLL (https://www.jperm.net/algs/oll) and PLL (https://www.jperm.net/algs/pll) algorithms found in the solving manuals. For example, case 27 from OLL:
+
+![](samplealgorithm.png)
+
+_R U R' U R U2 R'_
+
+
+
 ### WHY GROUP THEORY IS NECESSARY
+
+Without group theory, solving algorithms often appear to be arbitrary sequences of moves that must simply be memorized.
+
+Group theory provides a deeper explanation by showing:
+
+  Which cubies are being permuted.
+  
+  Why certain algorithms affect only specific pieces.
+  
+  Why some cube configurations are impossible.
+  
+  How algorithms can be constructed systematically using commutators and conjugates.
+
+Instead of viewing algorithms as random move sequences, we can understand them as mathematical objects with predictable effects.
 
 ### ALTERNATIVE APPROACHES
 
+Other mathematical and computational approaches can be used to study the Rubik's Cube.
+
+#### Brute-Force Search
+
+Attempts many possible move sequences until a solution is found.
+
+#### Computer Enumeration
+
+Systematically generates and analyzes all reachable cube states.
+
+#### Graph Theory
+
+Models cube configurations as vertices and legal moves as edges connecting them.
+
+Although these methods can solve or analyze the cube, they do not explain the underlying structure of solving algorithms as naturally as group theory does. For this reason, permutations and group theory provide the most suitable framework for understanding the mathematics behind the Rubik's Cube.
 
 -----------------------------------------------------------------------------------------
 
