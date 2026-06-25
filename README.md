@@ -295,6 +295,8 @@ Instead of viewing algorithms as random move sequences, we can understand them a
 
 ### ALTERNATIVE APPROACHES
 
+![](altapr.gif)
+
 Other mathematical and computational approaches can be used to study the Rubik's Cube.
 
 #### Brute-Force Search
