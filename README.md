@@ -98,9 +98,7 @@ To refer to an individual cubie, or cube piece, we use as many letters as sticke
 
 Center pieces have one visible sticker and are identified by a single letter.
 
-Examples:
-
-_U, D, F, B, R, L_
+- Examples: _U, D, F, B, R, L_
 
 ![](CENTERPIECES.png)
 
@@ -108,9 +106,7 @@ _U, D, F, B, R, L_
 
 Edge pieces have two stickers and are identified by two letters.
 
-Examples:
-
-_UF, UB, UL, UR, ..._
+- Examples: _UF, UB, UL, UR, ..._
 
 ![](EDGEPIECES.png)
 
@@ -118,9 +114,7 @@ _UF, UB, UL, UR, ..._
 
 Corner pieces have three stickers and are identified by three letters.
 
-Examples:
-
-_UFR, UFL, UBR, UBL, ..._
+- Examples: _UFR, UFL, UBR, UBL, ..._
 
 ![](CORNERPIECES.png)
 
